@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemPopViewGroup"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:paddingHorizontal="16dp"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/posterView"
+        android:layout_width="100dp"
+        android:layout_height="145dp"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/placeholder"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/posterView"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Phone title"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_favorite_border"
+        android:layout_toEndOf="@+id/linear"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
